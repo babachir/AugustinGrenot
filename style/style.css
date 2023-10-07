@@ -1,5 +1,8 @@
+body {
+    background-color: black;
+}
 .grilleImage {
-    margin: 5px;
-    max-width: 300px;
+    margin: 3px;
+    max-width: 100px;
     height: auto;
 }
