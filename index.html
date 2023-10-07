@@ -9,8 +9,10 @@
 </head>
 
 <body>
+    
     <script src="js/jquery.js"></script>
     <script src="js/mustache.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.js"></script>
     <script src="js/script.js"></script>
 
 
@@ -18,12 +20,17 @@
 
     <!-- Modèle Mustache -->
     <script id="imageListTemplate" type="text/template">
-    <ul class="image-list">
-        {{#images}}
-            <img class="grilleImage" src="{{.}}" alt="Image">
-        {{/images}}
-    </ul>
-</script>
+        <div class="image-list">
+            {{#images}}
+                <div class="image-item">
+                    <img class="grilleImage" src="{{src}}" alt="Image">
+                    <div class="metadata">
+                        <p>hashtag : {{hashtag}}</p>
+                    </div>
+                </div>
+            {{/images}}
+        </ul>
+    </script>
 
 </body>
 

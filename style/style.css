@@ -1,8 +1,22 @@
 body {
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.image-item {
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
 .grilleImage {
-    margin: 3px;
     max-width: 100px;
     height: auto;
+}
+
+.metadata {
+    color: white;
+    text-align: center;
 }
